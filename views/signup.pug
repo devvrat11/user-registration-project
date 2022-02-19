@@ -1,0 +1,24 @@
+head
+  title  Signup Form
+  // Including bootstrap v3.3.7
+  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+  link(rel='stylesheet', type='text/css', href='/style.css')
+br
+br
+br
+form(action='/sign_up', method='post', autocomplete='off')
+  h1  Signup form 
+  input#name.box(type='text', name='name', placeholder='Enter your Name', required='')
+  br
+  input#email.box(type='email', name='email', placeholder='Enter your E-Mail ', required='')
+  br
+  input#password.box(type='password', name='password', placeholder='Enter your Password ', required='',onclick="savePass();" )
+  br
+  input#phone.box(type='text', name='phoneNumber', placeholder='Enter your Phone Number ', required='')
+  br
+  br
+  input#submitDetails(type='submit', name='submitDetails', value='Submit Your Details')
+  br
+.col-md-3
+  p#show
+  // Blank DIV

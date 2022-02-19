@@ -1,0 +1,18 @@
+head
+  title  Login
+  // Including bootstrap v3.3.7
+  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+  link(rel='stylesheet', type='text/css', href='/style.css')
+br
+br
+br
+form(action='/login', method='post',autocomplete="off")
+  h1  Login Please 
+  input#email.box(type='email', name='email', placeholder='Enter your     EMail ', required='')
+  br
+  input#password.box(type='password', name='password', placeholder='Enter your Password ', required='')
+  br
+  input#submitDetails(type='submit', name='submitDetails', value='Submit Your Details')
+  br
+.col-md-3
+  // Blank DIV
